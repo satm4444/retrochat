@@ -25,80 +25,91 @@ class ChatBar extends StatelessWidget {
       height: 70,
       width: double.infinity,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          //  color: Colors.green.withOpacity(0.5),
-          border: Border.all(width: 2, color: Colors.black)),
-      child: Row(
+        borderRadius: BorderRadius.circular(10),
+        //  color: Colors.green.withOpacity(0.5),
+        //  border: Border.all(width: 0, color: Colors.black),
+      ),
+      child: Column(
         children: [
-          Container(
-            height: 70,
-            width: 10,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(8), bottomLeft: Radius.circular(8)),
-              color: color,
-            ),
-          ),
-          Container(
-            height: 70,
-            width: 70,
-            decoration: BoxDecoration(
-                border: Border.all(width: 1, color: Colors.black)),
-            child: Image.network(
-              imageurl,
-              fit: BoxFit.cover,
-            ),
-          ),
-          SizedBox(
-            width: 10,
-          ),
-          Container(
-            height: 70,
-            width: 200,
-            // color: Colors.redAccent,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SizedBox(
-                  height: 5,
-                ),
-                Text(
-                  name,
-                  style: GoogleFonts.lato(
-                      fontSize: 18,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  height: 5,
-                ),
-                Text(
-                  msg,
-                  style: GoogleFonts.comfortaa(
-                      fontSize: 14,
-                      color: Colors.blue,
-                      fontWeight: FontWeight.bold),
-                )
-              ],
-            ),
-          ),
-          Container(
-            height: 70,
-            width: 70,
-            decoration: BoxDecoration(
-              color: outColor,
-              borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(8),
-                  bottomRight: Radius.circular(8)),
-            ),
-            child: Center(
-              child: Container(
-                height: 10,
-                width: 10,
-                color: inColor,
+          Row(
+            children: [
+              SizedBox(
+                width: 5,
               ),
-            ),
-          )
+              Container(
+                height: 65,
+                width: 65,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100),
+                    border: Border.all(width: 2, color: Colors.black)),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(100),
+                  child: Image.network(
+                    imageurl,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Container(
+                height: 70,
+                width: 220,
+                // color: Colors.redAccent.withOpacity(0.1),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      name,
+                      style: GoogleFonts.lato(
+                          fontSize: 18,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      msg,
+                      style: GoogleFonts.comfortaa(
+                          fontSize: 14,
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Expanded(
+                child: Container(
+                  height: 65,
+                  //  width: 30,
+                  // decoration: BoxDecoration(
+                  //   color: outColor,
+                  //   borderRadius: BorderRadius.only(
+                  //     topRight: Radius.circular(8),
+                  //     bottomRight: Radius.circular(8),
+                  //   ),
+                  // ),
+                  child: Center(
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: inColor,
+                          borderRadius: BorderRadius.circular(100)),
+                      height: 11,
+                      width: 11,
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
         ],
       ),
     );

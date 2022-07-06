@@ -34,7 +34,7 @@ class MainScreen extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
         actions: [
-          Icon(CupertinoIcons.settings),
+          //   Icon(Icons.settings),
           SizedBox(
             width: 10,
           ),
@@ -69,7 +69,7 @@ class MainScreen extends StatelessWidget {
               height: 45,
               width: double.infinity,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(50),
                   color: Colors.white,
                   border: Border.all(width: 2, color: Colors.black)),
               child: Row(
@@ -119,7 +119,7 @@ class MainScreen extends StatelessWidget {
                       name: "Nishant Rawal",
                       msg: "gamer boy moh..",
                       outColor: Colors.grey,
-                      inColor: Colors.black,
+                      inColor: Colors.grey,
                       imageurl:
                           'https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/289740968_1449692608800970_415906555813859945_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=W1W0zZqRJ7wAX8tG8Ui&_nc_ht=scontent.fktm8-1.fna&oh=00_AT8EwvIReFqtq_KmT9j7-JzTNuJY5bTim6gimAy8acWPeQ&oe=62C75D00',
                     ),
@@ -143,7 +143,7 @@ class MainScreen extends StatelessWidget {
                         name: "Jetha Lal",
                         msg: "kya haal hai",
                         outColor: Colors.grey,
-                        inColor: Colors.black,
+                        inColor: Colors.grey,
                         imageurl:
                             'https://english.cdn.zeenews.com/sites/default/files/2021/12/29/1000713-dilip-joshi-jethalal.jpg'),
                     SizedBox(
@@ -153,23 +153,23 @@ class MainScreen extends StatelessWidget {
                     SizedBox(
                       height: 10,
                     ),
-                    tileTry(),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    tileTry(),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    tileTry(),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    tileTry(),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    tileTry(),
+                    // tileTry(),
+                    // SizedBox(
+                    //   height: 10,
+                    // ),
+                    // tileTry(),
+                    // SizedBox(
+                    //   height: 10,
+                    // ),
+                    // tileTry(),
+                    // SizedBox(
+                    //   height: 10,
+                    // ),
+                    // tileTry(),
+                    // SizedBox(
+                    //   height: 10,
+                    // ),
+                    // tileTry(),
                   ],
                 ),
               ),
