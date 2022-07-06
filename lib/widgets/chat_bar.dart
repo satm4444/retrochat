@@ -7,10 +7,14 @@ class ChatBar extends StatelessWidget {
   final String name;
   final String msg;
   final String imageurl;
+  final Color outColor;
+  final Color inColor;
   const ChatBar({
     required this.color,
     required this.name,
     required this.msg,
+    required this.inColor,
+    required this.outColor,
     required this.imageurl,
     Key? key,
   }) : super(key: key);
@@ -82,7 +86,7 @@ class ChatBar extends StatelessWidget {
             height: 70,
             width: 70,
             decoration: BoxDecoration(
-              color: Colors.black,
+              color: outColor,
               borderRadius: BorderRadius.only(
                   topRight: Radius.circular(8),
                   bottomRight: Radius.circular(8)),
@@ -91,7 +95,7 @@ class ChatBar extends StatelessWidget {
               child: Container(
                 height: 10,
                 width: 10,
-                color: Colors.green,
+                color: inColor,
               ),
             ),
           )

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import 'package:retrochat/views/login_screen.dart';
 import 'package:get/get.dart';
 
@@ -12,9 +12,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: Colors.white,
-    ));
     return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'RetChat',
