@@ -17,8 +17,8 @@ class LoginScreen extends StatelessWidget {
           height: deviceSize.height,
           width: deviceSize.width,
           child: Image.asset(
-            "assets/images/background.png",
-            fit: BoxFit.fill,
+            "assets/images/back.jpg",
+            fit: BoxFit.cover,
           ),
         ),
         Container(
@@ -39,9 +39,9 @@ class LoginScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Ret",
-                    style:
-                        GoogleFonts.righteous(fontSize: 38, color: Colors.cyan),
+                    "Re",
+                    style: GoogleFonts.righteous(
+                        fontSize: 38, color: Color(0xffe3424a)),
                   ),
                   Text(
                     "Chat",
@@ -53,11 +53,21 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(
+                height: 5,
+              ),
+              Text(
+                "Chat again and again !",
+                style: GoogleFonts.lato(
+                  fontSize: 18,
+                  color: Colors.black,
+                ),
+              ),
+              SizedBox(
                 height: 30,
               ),
               Container(
                 height: 50,
-                width: 210,
+                width: 200,
                 child: OutlinedButton(
                   onPressed: () {
                     //   authController.googleLogin();
@@ -88,9 +98,9 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              // SizedBox(
-              //   height: 60,
-              // ),
+              SizedBox(
+                height: 60,
+              ),
             ],
           ),
         )

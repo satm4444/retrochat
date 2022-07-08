@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'RetChat',
         theme: ThemeData().copyWith(
-          colorScheme: ThemeData().colorScheme.copyWith(
-              primary: Color.fromARGB(255, 20, 155, 24),
-              secondary: Colors.white),
+          colorScheme: ThemeData()
+              .colorScheme
+              .copyWith(primary: Color(0xffe3424a), secondary: Colors.white),
           errorColor: Colors.red,
         ),
         home: LoginScreen());
